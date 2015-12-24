@@ -30,5 +30,5 @@ Each <code>Joint</code> struct has the following properties:
     
     EJointType JointType 
 
-It also contains a Blueprint <code>KinectFusionActor</code> which contains a UProceduralMeshComponent that provides the output of the kinect
+The plugin also contains a Blueprint <code>KinectFusionActor</code> which contains a UProceduralMeshComponent that provides the output of the kinect
 fusion mesh reconstruction.
