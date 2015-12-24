@@ -2,7 +2,7 @@ To use this plugin you'll need to install the Kinect for Windows SDK 2.0
 
 http://www.microsoft.com/en-us/download/details.aspx?id=44561
 
-The Plugin contains a Blueprint <code>KinectActor</code> which provides realtime mesh reconstruction, camera texture, and body tracking. The actor contains a <code>UProceduralMeshComponent</code> which will contain the mesh reconstruction. Note that the mesh uses per-vertex colors so you'll need to assign it a [Vertex Color  Material](https://docs.unrealengine.com/latest/INT/Engine/UI/LevelEditor/Modes/MeshPaintMode/VertexColor/MaterialSetup/Color/index.html) 
+The Plugin contains a Blueprint <code>KinectActor</code> which provides realtime mesh reconstruction, camera texture, and body tracking. The actor contains a <code>UProceduralMeshComponent</code> which will contain the mesh reconstruction. Note that the mesh uses per-vertex colors so you'll need to assign it a [Vertex Color  Material](https://docs.unrealengine.com/latest/INT/Engine/UI/LevelEditor/Modes/MeshPaintMode/VertexColor/MaterialSetup/Color/index.html).
 
 The actor has the following Blueprint properties:
 
