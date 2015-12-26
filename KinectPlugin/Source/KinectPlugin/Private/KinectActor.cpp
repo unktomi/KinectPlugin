@@ -371,26 +371,33 @@ void AKinectActor::UpdateVertexData()
 				(abs(P11.X - P01.X) < max_edge_len) &&
 				(abs(P10.X - P01.X) < max_edge_len)))
 			{
+				const int32 Next = Vertices.Num();
 				Vertices.Add(P00);
 				Vertices.Add(P01);
 				Vertices.Add(P10);
+
+				Triangles.Add(Next);
+				Triangles.Add(Next + 1);
+				Triangles.Add(Next + 2);
+
 
 				VertexColors.Add(C[0][0]);
 				VertexColors.Add(C[0][1]);
 				VertexColors.Add(C[1][0]);
 
-				Vertices.Add(P01);
+				//Vertices.Add(P01);
+				Triangles.Add(Next + 1);
 				Vertices.Add(P11);
-				Vertices.Add(P10);
-
-				VertexColors.Add(C[0][1]);
+				Triangles.Add(Next + 3);
+				//Vertices.Add(P10);
+				Triangles.Add(Next + 2);
+				//VertexColors.Add(C[0][1]);
 				VertexColors.Add(C[1][1]);
-				VertexColors.Add(C[1][0]);
+				//VertexColors.Add(C[1][0]);
 			}
 		}
 
 	}
-	for (int i = 0; i < Vertices.Num(); i++) Triangles.Add(i);
 }
 
 static EJointType mapJointType(JointType type)
